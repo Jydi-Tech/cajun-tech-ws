@@ -4,17 +4,17 @@ import { CommonModule } from '@angular/common';
 import { environment } from '../../environments/environment';
 
 @Component({
-  selector: 'app-networks',
+  selector: 'app-home',
   standalone: true,
   imports: [RouterModule, CommonModule],
-  templateUrl: './networks.component.html',
-  styleUrls: ['./networks.component.css']
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
-export class NetworksComponent implements OnDestroy {
-  networkImage:string = environment.imageUrl + "/earth-network.jpg";
-
+export class HomeComponent implements OnDestroy {
+  homeImage = environment.imageUrl + "/FullBuildingDark2.jpg";
+  
   ngOnDestroy(): void {
-    this.networkImage = "";
+    this.homeImage = "";
   }
 
 }

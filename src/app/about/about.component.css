@@ -1,0 +1,27 @@
+.componentDiv{
+    display: grid;
+    position:absolute;
+    width: 100%;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-size: 2vw;
+}
+
+.backgroundImage {
+    grid-area:1 / 1 / 2 / 2;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+}
+
+.messageDiv {
+    grid-area:1 / 1 / 2 / 2;
+    background-color: rgba(25,25,25, 0.5);
+    margin-left: 1%;
+    margin-top: 1%;
+    padding: 1%;
+    height: min-content;
+    transform: translateZ(-1px) scale(1); /* 3D effect */
+    width: 90%    
+}

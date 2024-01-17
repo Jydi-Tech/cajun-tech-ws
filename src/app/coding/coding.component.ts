@@ -1,12 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy } from '@angular/core';
+import { environment } from '../../environments/environment';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-coding',
   standalone: true,
-  imports: [],
+  imports: [RouterModule, CommonModule],
   templateUrl: './coding.component.html',
-  styleUrl: './coding.component.css'
+  styleUrls: ['./coding.component.css']
 })
-export class CodingComponent {
+export class CodingComponent implements OnDestroy {
+  codingImage:string = environment.imageUrl + "/coding_background.jpg";
 
+  ngOnDestroy(): void {
+    this.codingImage = "";
+  }
+  
 }

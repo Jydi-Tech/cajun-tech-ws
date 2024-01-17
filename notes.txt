@@ -1,0 +1,10 @@
+this is basicly justed used to take notes and craft different commands
+ng generate component Home
+ng generate component Phone
+ng generate component Computers
+ng generate component Networks
+ng generate component Coding
+ng generate component About
+ng generate component Header
+
+

@@ -1,0 +1,29 @@
+
+.componentDiv{
+  display: grid;
+  position: absolute;
+  font-size: 3vw;
+}
+.backgroundImage {
+  grid-area:1 / 1 / 2 / 2;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: -1;
+}
+
+.messageDiv {
+  grid-area:1 / 1 / 2 / 2;
+  background-color: rgba(25,25,25, 0.5);
+  margin-left: 1%;
+  margin-top: 1%;
+  padding: 1%;
+  transform: translateZ(-1px) scale(1); /* 3D effect */
+  height: min-content;
+  z-index: 1;
+  width: 90%;
+}
+
+.computerMessageDivInner{
+  font-size:.9ch;
+}

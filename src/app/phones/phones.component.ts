@@ -4,17 +4,18 @@ import { CommonModule } from '@angular/common';
 import { environment } from '../../environments/environment';
 
 @Component({
-  selector: 'app-networks',
+  selector: 'app-phones',  
   standalone: true,
   imports: [RouterModule, CommonModule],
-  templateUrl: './networks.component.html',
-  styleUrls: ['./networks.component.css']
+  templateUrl: './phones.component.html',
+  styleUrls: ['./phones.component.css']
 })
-export class NetworksComponent implements OnDestroy {
-  networkImage:string = environment.imageUrl + "/earth-network.jpg";
+export class PhonesComponent implements OnDestroy {
+
+  phonesImage:string = environment.imageUrl + "/phonesBackground2.jpg";
 
   ngOnDestroy(): void {
-    this.networkImage = "";
+    this.phonesImage = "";
   }
 
 }

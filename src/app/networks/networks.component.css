@@ -1,0 +1,35 @@
+.componentDiv{
+  display: grid;
+  position: absolute;
+  font-size: 2vw;
+}
+.backgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.messageDiv {
+  grid-area:1 / 1 / 2 / 2;
+  background-color: rgba(25,25,25, 0.5);
+  margin-left: 1%;
+  margin-top: 1%;
+  padding: 1%;
+  height: min-content;
+  transform: translateZ(-1px) scale(1); /* 3D effect */
+  z-index: 1;
+  width: 90%;
+}
+
+.networkMessageDivInner{
+  font-size:2ch;
+}
+.networkMessageDivInnerSub{
+  font-size:.9ch;
+}
+
+

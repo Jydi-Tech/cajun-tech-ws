@@ -1,0 +1,44 @@
+
+.componentDiv{
+    display: grid;
+    position: absolute;
+    width: 100%;
+}
+.backgroundImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.messageDiv {
+    grid-area:1 / 1 / 2 / 2;
+    background-color: rgba(25,25,25, 0.5);
+    margin-left: 1%;
+    margin-top: 1%;
+    padding: 1%;
+    height: min-content;
+    max-width: min-content;
+    white-space: nowrap;
+    transform: translateZ(-1px) scale(1); /* 3D effect */
+    z-index: 1;
+}
+
+
+.homeMessageDivHeader{
+  font-size:3vw;
+  width: 100%;
+}
+
+.homeMessageDivInnerNote{
+    font-size:.9vw;
+    font-style: italic;
+    width: 70%;
+}
+
+.homeMessageDivInnerList{
+    font-size:1.9vw;
+}
