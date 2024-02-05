@@ -9,10 +9,13 @@
         </div>
         <div class="headerContactDiv">
             <p class="bold_underline">Location:</p><br>
+            <a href="https://maps.app.goo.gl/zYCKUGB552DNLL2DA" target="_blank">
             913 center st Suite B1<br>
-            Evanston WY, 82930<br>
+            Evanston WY, 82930
+            </a><br>
             <p class="bold_underline">Phone:</p><br>
-            Cell: (307) 679-2101<br>
+            <span id="phoneNumber" (click)="copyPhoneNumber()">Cell: (307) 679-2101</span><br>
+            <div class="copy-notification" *ngIf="showCopyNotification">Cell Copied!</div>
          </div>
         </div>
     <div id="buttonsDiv">

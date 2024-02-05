@@ -41,6 +41,45 @@
     justify-self: end; /* Align to the right */
     margin-left: auto; /* Push from the left */
   }
+
+  .headerContactDiv a {
+    color: rgb(129, 142, 255);
+    text-decoration: none;
+    background-color: inherit;
+
+  }
+
+  .headerContactDiv a:hover {
+    text-decoration: underline;
+  }
+  .copy-notification {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7); /* Translucent white */
+    padding: 10px;
+    border-radius: 5px;
+    /* Adjust positioning as needed */
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: fadeInOut 3s;
+  }
+  
+  @keyframes fadeInOut {
+    0%, 100% { opacity: 0; }
+    10%, 90% { opacity: 1; }
+  }
+  
+
+  #phoneNumber {
+    cursor: pointer;
+    color: rgb(129, 142, 255); /* Optional: make it look like a link */
+    background-color: inherit;
+  }
+
+  #phoneNumber:hover {
+    text-decoration: underline;
+  }
+  
   
   #buttonsDiv{
     display: grid;
