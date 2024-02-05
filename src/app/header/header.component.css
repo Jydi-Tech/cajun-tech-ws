@@ -27,6 +27,10 @@
     margin-left: 1%;
     margin-bottom: 1%;
   }
+
+  .headerImage:hover{
+    cursor: pointer;
+  }
   
   .headerContactDiv {
     grid-column: 2;
