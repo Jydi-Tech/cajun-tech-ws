@@ -49,11 +49,11 @@
 @media only screen and (max-width: 600px) {
     .componentDiv{
         overflow: hidden;
+        min-height: 100%;
     }
     .messageDiv {
      /* makes the div be slightly smaller span the grid and than the image and allow word wrap*/
      grid-area:1 / 1 / 2 / -1;
-     background-color: rgba(25,25,25, 0.3);
      margin-left: 1%;
      margin-top: 1%;
      padding: 1%;
@@ -80,17 +80,17 @@
     .backgroundImage{
         /*no horizontal scroll*/
         width: 150%;
-        height: 100%;   
+        height: auto;   
     }
 }
 @media only screen and (max-width: 800px) {
     .componentDiv{
         overflow: hidden;
+        min-height: 100%;
     }
     .messageDiv {
      /* makes the div be slightly smaller span the grid and than the image and allow word wrap*/
      grid-area:1 / 1 / 2 / -1;
-     background-color: rgba(25,25,25, 0.3);
      margin-left: 1%;
      margin-top: 1%;
      padding: 1%;
@@ -117,18 +117,18 @@
     .backgroundImage{
         /*no horizontal scroll*/
         width: 150%;
-        height: 100%;   
+        height: auto;   
     }
 }
 /* mobile with larger screen */
 @media only screen and (max-width: 1000px) {
     .componentDiv{
         overflow: hidden;
+        min-height: 100%;
     }
     .messageDiv {
      /* makes the div be slightly smaller span the grid and than the image and allow word wrap*/
      grid-area:1 / 1 / 2 / -1;
-     background-color: rgba(25,25,25, 0.3);
      margin-left: 1%;
      margin-top: 1%;
      padding: 1%;
@@ -155,7 +155,7 @@
     .backgroundImage{
         /*no horizontal scroll*/
         width: 150%;
-        height: 100%;   
+        height: auto;   
     }
 }
 
@@ -163,11 +163,11 @@
 @media only screen and (orientation: portrait) and (max-width: 2000px) {
     .componentDiv{
         overflow: hidden;
+        min-height: 100%;
     }
     .messageDiv {
      /* makes the div be slightly smaller span the grid and than the image and allow word wrap*/
      grid-area:1 / 1 / 2 / -1;
-     background-color: rgba(25,25,25, 0.3);
      margin-left: 1%;
      margin-top: 1%;
      padding: 1%;
@@ -193,7 +193,7 @@
     }
     .backgroundImage{
         width: 150%;
-        height: 100%;
+        height: auto;
 
         
     }
