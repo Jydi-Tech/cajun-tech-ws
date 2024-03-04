@@ -27,3 +27,65 @@
 .computerMessageDivInner{
   font-size:.9ch;
 }
+
+/** for mobile */ 
+@media only screen and (max-width: 600px) {
+  .componentDiv{
+      font-size: 5vw;
+      overflow: hidden;
+  }
+  .componentDiv h1{
+      font-size: 5vw;
+  }
+  .messageDiv {
+      background-color: rgba(25,25,25, 0.5);
+      margin-left: 1%;
+      margin-bottom: 1%;
+  }
+  .backgroundImage{
+    width: 180%;
+  }
+
+}
+
+/** for mobile with larger screen*/
+@media only screen and (max-width: 800px) {
+  .componentDiv{
+      font-size: 4vw;
+      overflow: hidden;
+  }
+  .componentDiv h1{
+      font-size: 4vw;
+  }
+  .messageDiv {
+      background-color: rgba(25,25,25, 0.5);
+      margin-left: 1%;
+      margin-bottom: 1%;
+  }
+  .backgroundImage{
+    width: 160%;
+  }
+  
+}
+/** for mobile with xlarger screen*/
+@media screen and (max-width: 1000px){
+  .componentDiv{
+      font-size: 3vw;
+      overflow: hidden;
+  }
+  .componentDiv h1{
+      font-size: 3vw;
+  }
+  .messageDiv {
+      background-color: rgba(25,25,25, 0.5);
+      margin-left: 1%;
+      margin-bottom: 1%;
+  }
+  .backgroundImage{
+    width: 150%;
+  }
+  
+}
+
+/* Add a valid CSS rule or selector here */
+

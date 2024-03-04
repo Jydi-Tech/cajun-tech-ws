@@ -22,24 +22,6 @@ export const routes: Routes = [
     { path: 'About', component:AboutComponent}
 ]
 
-/*@NgModule({
-    imports: [
-        BrowserModule,
-        FormsModule,
-        RouterModule.forRoot(routes)
-    ],
-    declarations:[
-        AppComponent,
-        HomeComponent,
-        PhonesComponent,
-        ComputersComponent,
-        NetworksComponent,
-        CodingComponent,
-        AboutComponent,
-        HeaderComponent
-    ],
-   // bootstrap: [AppComponent]
-})*/
 export class AppModule{
 
 }

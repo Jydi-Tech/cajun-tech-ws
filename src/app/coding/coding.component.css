@@ -2,7 +2,7 @@
   display: grid;
   position: absolute;
   font-size: 2.5vw;
-  width: 90%    
+  width: auto;    
 
 }
 .backgroundImage {
@@ -31,4 +31,69 @@
 .codingMessageDivInner{
   font-size:.9ch;
 }
+
+/* for mobile */
+@media only screen and (max-width: 600px) {
+  .componentDiv{
+      font-size: 4.5vw;
+      overflow: hidden;
+      width: 98%;
+  }
+  .componentDiv h1{
+      font-size: 4.5vw;
+  }
+  .messageDiv {
+      background-color: rgba(25,25,25, 0.5);
+      margin-left: 1%;
+      margin-bottom: 1%;
+  }
+  .backgroundImage{
+    width: 240%;
+  }
+
+}
+
+/** for mobile with larger screen*/
+@media only screen and (max-width: 800px) {
+  .componentDiv{
+      font-size: 3.5vw;
+      overflow: hidden;
+  }
+  .componentDiv h1{
+      font-size: 3.5vw;
+  }
+  .messageDiv {
+      background-color: rgba(25,25,25, 0.7);
+      margin-left: 1%;
+      margin-bottom: 1%;
+      width: 98%;
+  }
+  .backgroundImage{
+    width: 240%;
+  }
+}
+
+/** for mobile with xlarger screen*/
+@media only screen and (max-width: 1000px) {
+  .componentDiv{
+      font-size: 3vw;
+      overflow: hidden;
+  }
+  .componentDiv h1{
+      font-size: 3vw;
+  }
+  .messageDiv {
+      background-color: rgba(25,25,25, 0.7);
+      margin-left: 1%;
+      margin-bottom: 1%;
+      width: 98%;
+  }
+  .backgroundImage{
+    width: 240%;
+  }
+}
+
+
+/* Add a valid CSS rule or selector here */
+
 

@@ -5,6 +5,7 @@
     text-align: left;
     color: rgb(255, 255, 255);
     font-size: 2vw;
+    min-height: 90%;
 }
 
 .backgroundImage {
@@ -25,3 +26,48 @@
     transform: translateZ(-1px) scale(1); /* 3D effect */
     width: 90%    
 }
+
+/*phone section*/
+@media (max-width: 600px) {
+    .componentDiv{
+        font-size: 2.2vw;
+    }
+    .componentDiv h1{
+        font-size: 4vw;
+    }
+    .messageDiv {
+        background-color: rgba(25,25,25, 0.5);
+    }
+}
+
+/** for mobile with larger screen*/
+@media (max-width: 800px) {
+    .componentDiv{
+        font-size: 2.2vw;
+    }
+    .componentDiv h1{
+        font-size: 3.5vw;
+    }
+    .messageDiv {
+        background-color: rgba(25,25,25, 0.5);
+    }
+}
+
+/** for mobile with xlarger screen*/
+@media (max-width: 1000px) {
+    .componentDiv{
+        font-size: 2.2vw;
+    }
+    .componentDiv h1{
+        font-size: 3.5vw;
+    }
+    .messageDiv {
+        background-color: rgba(25,25,25, 0.5);
+    }
+}
+
+
+
+
+/* Add a valid CSS rule or selector here */
+

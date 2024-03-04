@@ -3,6 +3,7 @@
     display: grid;
     position: absolute;
     width: 100%;
+    min-height: 80%;
 }
 .backgroundImage {
     position: absolute;
@@ -11,7 +12,7 @@
     width: 100%;
     height: auto;
     object-fit: cover;
-    z-index: -1;
+    z-index: -2;
 }
 
 .messageDiv {
@@ -42,3 +43,161 @@
 .homeMessageDivInnerList{
     font-size:1.9vw;
 }
+
+
+/* for mobile */
+@media only screen and (max-width: 600px) {
+    .componentDiv{
+        overflow: hidden;
+    }
+    .messageDiv {
+     /* makes the div be slightly smaller span the grid and than the image and allow word wrap*/
+     grid-area:1 / 1 / 2 / -1;
+     background-color: rgba(25,25,25, 0.3);
+     margin-left: 1%;
+     margin-top: 1%;
+     padding: 1%;
+     height: min-content;
+     max-width: 85%;
+     white-space: normal;
+     transform: translateZ(-1px) scale(1); /* 3D effect */
+     z-index: 1;    
+    }
+    .homeMessageDivHeader{
+        font-size: 7vw;
+    }
+    .homeMessageDivInnerNote{
+        font-size: 2vw;
+    }
+    .homeMessageDivInnerList{
+        font-size: 3.5vw;
+    }
+    .bottomMessageDiv{
+        font-size: 2.5vw;
+        /* itallic */
+        font-style: italic;
+    }
+    .backgroundImage{
+        /*no horizontal scroll*/
+        width: 150%;
+        height: 100%;   
+    }
+}
+@media only screen and (max-width: 800px) {
+    .componentDiv{
+        overflow: hidden;
+    }
+    .messageDiv {
+     /* makes the div be slightly smaller span the grid and than the image and allow word wrap*/
+     grid-area:1 / 1 / 2 / -1;
+     background-color: rgba(25,25,25, 0.3);
+     margin-left: 1%;
+     margin-top: 1%;
+     padding: 1%;
+     height: min-content;
+     max-width: 85%;
+     white-space: normal;
+     transform: translateZ(-1px) scale(1); /* 3D effect */
+     z-index: 1;    
+    }
+    .homeMessageDivHeader{
+        font-size: 5vw;
+    }
+    .homeMessageDivInnerNote{
+        font-size: 1.5vw;
+    }
+    .homeMessageDivInnerList{
+        font-size: 2.5vw;
+    }
+    .bottomMessageDiv{
+        font-size: 2.5vw;
+        /* itallic */
+        font-style: italic;
+    }
+    .backgroundImage{
+        /*no horizontal scroll*/
+        width: 150%;
+        height: 100%;   
+    }
+}
+/* mobile with larger screen */
+@media only screen and (max-width: 1000px) {
+    .componentDiv{
+        overflow: hidden;
+    }
+    .messageDiv {
+     /* makes the div be slightly smaller span the grid and than the image and allow word wrap*/
+     grid-area:1 / 1 / 2 / -1;
+     background-color: rgba(25,25,25, 0.3);
+     margin-left: 1%;
+     margin-top: 1%;
+     padding: 1%;
+     height: min-content;
+     max-width: 85%;
+     white-space: normal;
+     transform: translateZ(-1px) scale(1); /* 3D effect */
+     z-index: 1;    
+    }
+    .homeMessageDivHeader{
+        font-size: 4vw;
+    }
+    .homeMessageDivInnerNote{
+        font-size: 1.5vw;
+    }
+    .homeMessageDivInnerList{
+        font-size: 2.5vw;
+    }
+    .bottomMessageDiv{
+        font-size: 2.5vw;
+        /* itallic */
+        font-style: italic;
+    }
+    .backgroundImage{
+        /*no horizontal scroll*/
+        width: 150%;
+        height: 100%;   
+    }
+}
+
+/** for when height is greater than width */
+@media only screen and (orientation: portrait) and (max-width: 2000px) {
+    .componentDiv{
+        overflow: hidden;
+    }
+    .messageDiv {
+     /* makes the div be slightly smaller span the grid and than the image and allow word wrap*/
+     grid-area:1 / 1 / 2 / -1;
+     background-color: rgba(25,25,25, 0.3);
+     margin-left: 1%;
+     margin-top: 1%;
+     padding: 1%;
+     height: min-content;
+     max-width: 85%;
+     white-space: normal;
+     transform: translateZ(-1px) scale(1); /* 3D effect */
+     z-index: 1;    
+    }
+    .homeMessageDivHeader{
+        font-size: 4vw;
+    }
+    .homeMessageDivInnerNote{
+        font-size: 1.5vw;
+    }
+    .homeMessageDivInnerList{
+        font-size: 2.5vw;
+    }
+    .bottomMessageDiv{
+        font-size: 2.5vw;
+        /* itallic */
+        font-style: italic;
+    }
+    .backgroundImage{
+        width: 150%;
+        height: 100%;
+
+        
+    }
+    
+}
+
+/* Add your CSS rules or selectors here */

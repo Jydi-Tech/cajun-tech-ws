@@ -27,7 +27,7 @@ export class HeaderComponent {
   }
   
   onButtonClick(buttonLabel: string){
-    //this is needed to allow the button to work it passes the string
+    //this is needed to allow the button to work it passes the string for the array of buttons
   }
 
   copyPhoneNumber() {
